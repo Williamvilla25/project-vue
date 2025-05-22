@@ -1,16 +1,15 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router';
 
-import EditarComuna from '../components/comunas/EditarComuna,vue'
-import CrearComuna from '../components/comunas/NewComuna.vue'
-import Comunas from '../views/Comunas.vue'
-import HomeView from '../views/HomeView.vue'
-
+import EditarComuna from '../components/Comunas/EditarComuna.vue';
+import NewComuna from '../components/Comunas/NewComuna.vue';
+import Comunas from '../views/Comunas.vue';
+import HomeView from '../views/HomeView.vue';
 
 const routes = [
   {
-   path: '/',
-   name: 'home',
-   component: Home
+    path: '/',
+    name: 'Home',
+    component: HomeView
   },
   {
     path: '/comunas',
@@ -20,14 +19,12 @@ const routes = [
   {
     path: '/editar-comuna/:id',
     name: 'EditarComuna',
-    name: 'EditarComunas',
-    component: EditarComunas
+    component: EditarComuna
   },
   {
-    path: '/add-comuna/:id',
+    path: '/add-comuna',
     name: 'NewComuna',
-    name: 'NewComunas',
-    component: NewComunas
+    component: NewComuna
   },
   {
     path: '/about',
