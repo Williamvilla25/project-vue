@@ -1,7 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 import EditarComuna from '../components/comunas/EditarComuna,vue'
-import CrearComuna from '../components/comunas/NewrComuna.vue'
+import CrearComuna from '../components/comunas/NewComuna.vue'
 import Comunas from '../views/Comunas.vue'
 import HomeView from '../views/HomeView.vue'
 
